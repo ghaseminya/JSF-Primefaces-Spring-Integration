@@ -31,3 +31,14 @@ Java ,JSF, Primefaces, Spring, Spring Security, Mybatis, Login Example + Templat
 
 	3. Credencial 	: test test - ADMIN ACCOUNT
 					: viewer viewer - MODERATOR ACCOUNT	
+
+## Showcase
+
+### Login Page
+
+![login](http://s29.postimg.org/f62zxt22v/Login.png)
+
+### Welcome Page
+
+![index](http://s12.postimg.org/u9vx5t1ql/index.png)
+
