@@ -7,7 +7,7 @@
                            http://mybatis.org/schema/mybatis-spring 
                            http://mybatis.org/schema/mybatis-spring-1.2.xsd">
 
-    <mybatis-spring:scan base-package="sk.fus.app.dao.**" />
+    <mybatis-spring:scan base-package="sk.app.dao.**" />
 
     <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource"  destroy-method="close">
                     <property name="dataSourceClassName" value="com.mysql.jdbc.jdbc2.optional.MysqlDataSource"/>
@@ -16,9 +16,9 @@
                     <property name="idleTimeout" value="30000" />
                     <property name="dataSourceProperties">
                               <props>
-                                  <prop key="url">jdbc:mysql://host:3306/db</prop>
-                                  <prop key="user">username</prop>
-                                  <prop key="password">password</prop>
+                                  <prop key="url">jdbc:mysql://localhost:3306/db</prop>
+                                  <prop key="user">root</prop>
+                                  <prop key="password"></prop>
                                   <prop key="prepStmtCacheSize">250</prop>
                                   <prop key="prepStmtCacheSqlLimit">2048</prop>
                                   <prop key="cachePrepStmts">true</prop>
@@ -33,7 +33,5 @@
     </bean>
 
     <bean id="userLoginService" class="sk.app.service.UserLoginService" />
-
-    <bean id="customerService" class="sk.app.service.CustomerServiceImpl" />
 
 </beans>

@@ -40,8 +40,8 @@ public class UserLoginServiceTest {
     @Test
     public void testLoadUserByUsername_negative(){
         UserDetails expectedUserDetails = userLoginService.loadUserByUsername(USERNAME);
-        assertEquals("lobor", expectedUserDetails.getUsername().toString());
-        assertEquals("lobor", expectedUserDetails.getPassword().toString());
+        assertEquals("test", expectedUserDetails.getUsername().toString());
+        assertEquals("test", expectedUserDetails.getPassword().toString());
         assertEquals(2 , expectedUserDetails.getAuthorities().size());
     }
 }

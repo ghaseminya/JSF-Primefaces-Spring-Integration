@@ -22,7 +22,6 @@
 
     <mappers>
         <mapper resource="user-details-mapper.xml" />
-        <mapper resource="customer-details-mapper.xml" />
     </mappers>
 
 </configuration>
