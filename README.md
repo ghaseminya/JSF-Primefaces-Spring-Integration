@@ -11,8 +11,7 @@ PreBuild Steps :
 			: Line 20 Username to Database
 			: Line 21 Password to Database
 
-
-			![alt tag](http://s14.postimg.org/7o2yoriwh/db_Connect.jpg)
+![db_Connect](http://s14.postimg.org/7o2yoriwh/db_Connect.jpg)
 
 Build :
 	
