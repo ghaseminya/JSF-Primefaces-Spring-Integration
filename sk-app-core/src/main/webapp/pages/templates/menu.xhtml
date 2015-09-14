@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+
+    </h:head>
+
+    <h:body>
+        <ui:composition>
+            <h:form>
+                <p:outputPanel id="menuPanel" layout="block">
+                    <p:menu autoSubmenuDisplay="true"
+                            style="width:213px;height:483px;border:none;font-size:small;padding:0px;"
+                            ajax="false"
+                            type="sliding"
+                            backLabel="#{msg['menu.back']}">
+
+                        <p:submenu label="Pages" icon="ui-icon ui-icon-refresh">
+                            <p:menuitem value="Home"
+                                        url="/pages/secure/index.xhtml" />
+
+                            <p:menuitem value="Page 1"
+                                        url="/pages/secure/page1.xhtml" />
+
+                            <p:menuitem value="Page 2"
+                                        url="/pages/secure/page2.xhtml" />
+                        </p:submenu>
+
+                        <p:submenu label="More Pages" icon="ui-icon ui-icon-refresh">
+                            <p:menuitem value="Page 3"
+                                        url="/pages/secure/page3.xhtml" />
+
+                            <p:menuitem value="Page 4"
+                                        url="/pages/secure/page4.xhtml" />
+                        </p:submenu>
+
+                    </p:menu>
+                </p:outputPanel>
+            </h:form>
+        </ui:composition>
+
+    </h:body>
+
+</html>
+
+
