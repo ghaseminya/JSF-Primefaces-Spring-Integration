@@ -4,8 +4,8 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>sk-app-core</groupId>
-    <artifactId>sk.app-core</artifactId>
+    <groupId>sk.app</groupId>
+    <artifactId>sk-app-core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>sk-app-core</name>
@@ -47,9 +47,10 @@
 
         <!-- Junit Version -->
         <junit.version>4.11</junit.version>
+        <mockito.version>1.9.5</mockito.version>
 
         <!-- Database Connection -->
-        <fus.app.db.version>0.0.1-SNAPSHOT</fus.app.db.version>
+        <sk.app.db.version>0.0.1-SNAPSHOT</sk.app.db.version>
 
         <!-- JETTY RUN -->
         <jetty.version>9.2.1.v20140609</jetty.version>
@@ -265,9 +266,15 @@
         </dependency>
 
         <dependency>
-            <groupId>sk.app.db</groupId>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>sk.app</groupId>
             <artifactId>sk-app-db</artifactId>
-            <version>${fus.app.db.version}</version>
+            <version>${sk.app.db.version}</version>
         </dependency>
 
         <dependency>
